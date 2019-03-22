@@ -1,7 +1,7 @@
 const assert = require('assert');
 Object.freeze(assert);
 const makeExchange = require('./src/index.js');
-
+//let sddd = makeExchange(1000);
 describe('makeExchange function', () => {
   it('should return ERROR object if the currency more than 10000', () => {
     assert.deepEqual(makeExchange(10001), {error: "You are rich, my friend! We don't have so much coins for exchange"});
